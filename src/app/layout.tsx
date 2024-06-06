@@ -1,22 +1,33 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./provider";
+import { Noto_Sans_Display, Noto_Serif } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const notoSansDisplay = Noto_Sans_Display({ subsets: ["latin"] });
+const notoSerif = Noto_Serif({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nicholas Portfolio",
-  description: "Creating a portfolio website with Next.js",
+    title: "Nicholas's Digital Showcase",
+    description: "Creating a Digital Portfolio Showcasing Work Using Next.js",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body className={notoSansDisplay.className}>
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem
+                    disableTransitionOnChange
+                >
+                    {children}
+                </ThemeProvider>
+            </body>
+        </html>
+    );
 }
