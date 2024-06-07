@@ -37,13 +37,14 @@ const Hero = () => {
                     />
 
                     <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                        Hello, I'm Nicholas, a Software Developer.
+                        Hello, I&apos;m Nicholas, a Software Developer.
                     </p>
                     <a href="#about">
                         <NextWhiteButton
                             title="View my work"
                             icon={<FaLocationArrow />}
                             position="right"
+                            handleClick={() => {}}
                         />
                     </a>
                 </div>
