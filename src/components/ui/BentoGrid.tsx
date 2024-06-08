@@ -79,7 +79,7 @@ export const BentoGridItem = ({
                             alt={img}
                             className={cn(
                                 imgClassName,
-                                "object-cover, object-center"
+                                "object-cover object-center"
                             )}
                         />
                     )}
@@ -93,14 +93,14 @@ export const BentoGridItem = ({
                         <img
                             src={spareImg}
                             alt={spareImg}
-                            width={220}
                             className="object-cover object-center w-full h-full"
                         />
                     )}
                 </div>
                 {id === 6 && (
-                    // add background animation , remove the p tag
-                    <BackgroundGradientAnimation></BackgroundGradientAnimation>
+                    <BackgroundGradientAnimation>
+                        <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+                    </BackgroundGradientAnimation>
                 )}
                 <div
                     className={cn(
@@ -108,10 +108,12 @@ export const BentoGridItem = ({
                         "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
                     )}
                 >
-                    <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#000000] z-10">
+                    <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#454650] z-10">
                         {description}
                     </div>
-                    <div className="font-sans font-bold text-black dark:text-neutral-200 mb-2 mt-2 ">
+                    <div
+                        className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+                    >
                         {title}
                     </div>
 
@@ -120,25 +122,27 @@ export const BentoGridItem = ({
                     {/* tech stack list */}
                     {id === 3 && (
                         <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-                            <div className="flex flex-col gap-3 lg:gap-8 ">
+                            <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                                 {["MongoDB", "React.js", "Next.js"].map(
                                     (item) => (
                                         <span
                                             key={item}
-                                            className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#858bb8] text-white-100"
+                                            className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                                                        lg:opacity-100 rounded-lg text-center bg-[#858bb8]"
                                         >
                                             {item}
                                         </span>
                                     )
                                 )}
-                                <span className="py-4 px-3 rounded-lg text-center bg-[#858bb8] text-white-100" />
+                                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#858bb8]" />
                             </div>
-                            <div className="flex flex-col gap-3 lg:gap-8 ">
-                                <span className="py-4 px-3 rounded-lg text-center bg-[#858bb8] text-white-100" />
+                            <div className="flex flex-col gap-3 md:gap-3 lg:gap-8 ">
+                                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#858bb8] " />
                                 {["JavaScript", "HTML", "CSS"].map((item) => (
                                     <span
                                         key={item}
-                                        className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#858bb8] text-white-100"
+                                        className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                                                    lg:opacity-100 rounded-lg text-center bg-[#858bb8]"
                                     >
                                         {item}
                                     </span>
