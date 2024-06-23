@@ -92,6 +92,34 @@ export const projects = [
         ],
         link: "https://github.com/NicholasCloud4/netflix",
     },
+    {
+        id: 3,
+        title: "Netflix Clone",
+        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+        img: "/p2.svg",
+        iconLists: [
+            "/next.svg",
+            "/tail.svg",
+            "/ts.svg",
+            "/stream.svg",
+            "/c.svg",
+        ],
+        link: "https://github.com/NicholasCloud4/netflix",
+    },
+    {
+        id: 3,
+        title: "Netflix Clone",
+        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+        img: "/p2.svg",
+        iconLists: [
+            "/next.svg",
+            "/tail.svg",
+            "/ts.svg",
+            "/stream.svg",
+            "/c.svg",
+        ],
+        link: "https://github.com/NicholasCloud4/netflix",
+    },
 ];
 
 export const testimonials = [
@@ -190,13 +218,16 @@ export const socialMedia = [
     {
         id: 1,
         img: "/git.svg",
+        link: "https://www.linkedin.com/in/nicholas-d141",
     },
     {
         id: 2,
-        img: "/twit.svg",
+        img: "/link.svg",
+        link: "https://www.linkedin.com/in/nicholas-d141",
     },
     {
         id: 3,
-        img: "/link.svg",
+        img: "/mail.svg",
+        link: "https://www.linkedin.com/in/nicholas-d141",
     },
 ];
