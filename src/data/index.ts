@@ -1,14 +1,13 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
     {
         id: 1,
-        title: "I prioritize client collaboration, fostering open communication ",
+        title: "I prioritize collaboration, fostering a culture of openness and teamwork.",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
@@ -29,7 +28,8 @@ export const gridItems = [
     {
         id: 3,
         title: "My tech stack",
-        description: "I constantly try to improve",
+        description:
+            "I am dedicated to consistently seeking opportunities for growth and improvement in all aspects of my work and interactions.",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
         titleClassName: "justify-center",
@@ -38,7 +38,7 @@ export const gridItems = [
     },
     {
         id: 4,
-        title: "Tech enthusiast with a passion for development.",
+        title: "Passionate about technology and dedicated to advancing development initiatives.",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-1",
         imgClassName: "",
@@ -50,7 +50,7 @@ export const gridItems = [
     {
         id: 5,
         title: "Currently building a JS Animation library",
-        description: "The Inside Scoop",
+        description: "Discover Exclusive Insights",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
         titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -73,16 +73,16 @@ export const projects = [
     {
         id: 1,
         title: "Threads Clone",
-        des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-        img: "/p1.svg",
+        des: "This Threads clone built with Next.js highlights the capabilities of modern web development frameworks, replicating key microblogging features with excellent performance and user experience. It provides a solid foundation for both learning and production applications.",
+        img: "/p1.png",
         iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
         link: "https://github.com/NicholasCloud4/Threads-clone",
     },
     {
         id: 2,
         title: "Netflix Clone",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
+        des: "This Netflix clone built with Next.js demonstrates the power and flexibility of modern web development frameworks and tools.It effectively replicates the core functionalities of a leading video streaming platform, ensuring high performance and a rich user experience.",
+        img: "/p2.png",
         iconLists: [
             "/next.svg",
             "/tail.svg",
@@ -94,9 +94,9 @@ export const projects = [
     },
     {
         id: 3,
-        title: "Netflix Clone",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
+        title: "Savor Spot",
+        des: "Savor Spot, a food site created with Next.js, showcases the capabilities of contemporary web development, offering outstanding performance and a smooth user experience. It serves as an excellent example of scalable and responsive web design, suitable for both educational purposes and real-world applications.",
+        img: "/p3.png",
         iconLists: [
             "/next.svg",
             "/tail.svg",
@@ -105,112 +105,20 @@ export const projects = [
             "/c.svg",
         ],
         link: "https://github.com/NicholasCloud4/netflix",
-    },
-    {
-        id: 3,
-        title: "Netflix Clone",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
-        iconLists: [
-            "/next.svg",
-            "/tail.svg",
-            "/ts.svg",
-            "/stream.svg",
-            "/c.svg",
-        ],
-        link: "https://github.com/NicholasCloud4/netflix",
-    },
-];
-
-export const testimonials = [
-    {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-];
-
-export const companies = [
-    {
-        id: 1,
-        name: "cloudinary",
-        img: "/cloud.svg",
-        nameImg: "/cloudName.svg",
-    },
-    {
-        id: 2,
-        name: "appwrite",
-        img: "/app.svg",
-        nameImg: "/appName.svg",
-    },
-    {
-        id: 3,
-        name: "HOSTINGER",
-        img: "/host.svg",
-        nameImg: "/hostName.svg",
     },
     {
         id: 4,
-        name: "stream",
-        img: "/s.svg",
-        nameImg: "/streamName.svg",
-    },
-    {
-        id: 5,
-        name: "docker.",
-        img: "/dock.svg",
-        nameImg: "/dockerName.svg",
-    },
-];
-
-export const workExperience = [
-    {
-        id: 1,
-        title: "Frontend Engineer Intern",
-        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-        className: "md:col-span-2",
-        thumbnail: "/exp1.svg",
-    },
-    {
-        id: 2,
-        title: "Mobile App Dev - JSM Tech",
-        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-        className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp2.svg",
-    },
-    {
-        id: 3,
-        title: "Freelance App Dev Project",
-        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-        className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp3.svg",
-    },
-    {
-        id: 4,
-        title: "Lead Frontend Developer",
-        desc: "Developed and maintained user-facing features using modern frontend technologies.",
-        className: "md:col-span-2",
-        thumbnail: "/exp4.svg",
+        title: "NASA Countdown Timer",
+        des: "A NASA countdown timer created using JavaScript demonstrates the versatility and power of the language, delivering precise and engaging functionality. This project exemplifies effective use of JavaScript for creating dynamic and interactive web applications, suitable for both educational and practical purposes.",
+        img: "/p2.svg",
+        iconLists: [
+            "/next.svg",
+            "/tail.svg",
+            "/ts.svg",
+            "/stream.svg",
+            "/c.svg",
+        ],
+        link: "https://github.com/NicholasCloud4/netflix",
     },
 ];
 
@@ -218,7 +126,7 @@ export const socialMedia = [
     {
         id: 1,
         img: "/git.svg",
-        link: "https://www.linkedin.com/in/nicholas-d141",
+        link: "https://github.com/NicholasCloud4",
     },
     {
         id: 2,
@@ -228,6 +136,6 @@ export const socialMedia = [
     {
         id: 3,
         img: "/mail.svg",
-        link: "https://www.linkedin.com/in/nicholas-d141",
+        link: "mailto:nicholas.dhannie2022@gmail.com",
     },
 ];

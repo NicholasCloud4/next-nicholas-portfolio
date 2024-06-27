@@ -21,7 +21,7 @@ const RecentProjects = () => {
                                 <PinContainer
                                     title={link}
                                     href={link}
-                                    className="text-indigo-50"
+                                    className="text-indigo-400"
                                 >
                                     <div
                                         className="relative flex items-center justify-center sm:w-[570px] w-[80vw]
