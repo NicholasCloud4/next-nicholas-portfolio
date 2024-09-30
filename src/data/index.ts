@@ -49,7 +49,7 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently building a JS Animation library",
+        title: "Currently learning React and Next JS.",
         description: "Discover Exclusive Insights",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -74,7 +74,7 @@ export const projects = [
         id: 1,
         title: "Threads Clone",
         des: "This Threads clone built with Next.js highlights the capabilities of modern web development frameworks, replicating key microblogging features with excellent performance and user experience. It provides a solid foundation for both learning and production applications.",
-        img: "/p1.png",
+        img: "/p2.png",
         iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
         link: "https://github.com/NicholasCloud4/Threads-clone",
     },
@@ -82,7 +82,7 @@ export const projects = [
         id: 2,
         title: "Netflix Clone",
         des: "This Netflix clone built with Next.js demonstrates the power and flexibility of modern web development frameworks and tools.It effectively replicates the core functionalities of a leading video streaming platform, ensuring high performance and a rich user experience.",
-        img: "/p2.png",
+        img: "/p1.png",
         iconLists: [
             "/next.svg",
             "/tail.svg",
@@ -104,7 +104,7 @@ export const projects = [
             "/stream.svg",
             "/c.svg",
         ],
-        link: "https://github.com/NicholasCloud4/netflix",
+        link: "https://github.com/NicholasCloud4/food-site",
     },
     {
         id: 4,
@@ -118,7 +118,7 @@ export const projects = [
             "/stream.svg",
             "/c.svg",
         ],
-        link: "https://github.com/NicholasCloud4/netflix",
+        link: "https://github.com/NicholasCloud4/NASA-Axiom-Mission-3-Count-Down",
     },
 ];
 
